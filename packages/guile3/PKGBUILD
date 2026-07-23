@@ -7,7 +7,7 @@ pkgsuffix="mingw2025"
 pkgrel=1
 pkgdesc="Guile Scheme Implementation"
 arch=('any')
-mingw_arch=('mingw64' 'ucrt64' 'clang64' 'clangarm64')
+mingw_arch=('ucrt64' 'clang64' 'clangarm64')
 #For now we use a heavily-patched branch from the 3.0.11 release, but
 #some of the patches are already merged upstream and upstream seems
 #receptive to the rest so we should be able to use 3.0.12 without
@@ -24,7 +24,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-gcc"
              "${MINGW_PACKAGE_PREFIX}-libltdl")
 depends=("${MINGW_PACKAGE_PREFIX}-gmp"
          "${MINGW_PACKAGE_PREFIX}-libffi"
-         "${MINGW_PACKAGE_PREFIX}-bdwgc")
+         "${MINGW_PACKAGE_PREFIX}-gc")
 #Switch pkgfull and source to build the tarball or git.
 #pkgfull="${_realname}"
 #source=(git+${git_url}${pkgbranch})
