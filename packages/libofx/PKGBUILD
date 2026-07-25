@@ -32,6 +32,7 @@ build() {
     --enable-shared \
     --with-opensp-includes=${MINGW_PREFIX}/include/OpenSP \
     --with-opensp-libs=${MINGW_PREFIX}/bin/libosp-5.dll \
+    CXXFLAGS="-std=c++17 $CXXFLAGS" \
     "$@"
 
     make
