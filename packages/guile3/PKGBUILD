@@ -21,6 +21,7 @@ url="https://downloads.sourceforge.net/gnucash"
 license=('GPL-2.0-only')
 options=('!libtool' 'debug' 'strip' 'buildflags')
 makedepends=("${MINGW_PACKAGE_PREFIX}-gcc"
+             "${MINGW_PACKAGE_PREFIX}-gperf"
              "${MINGW_PACKAGE_PREFIX}-libltdl")
 depends=("${MINGW_PACKAGE_PREFIX}-gmp"
          "${MINGW_PACKAGE_PREFIX}-libffi"
